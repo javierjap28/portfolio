@@ -26,6 +26,7 @@
     }
     section, .section-container {
         height: fit-content;
+        justify-content: space-between;
     }
     section {
         margin: 0 5%;
@@ -37,6 +38,7 @@
     }
     .about-containers {
         margin-top: 0;
+        padding-top: 1.5rem;
     }
 }
 @media screen and (max-width: 600px) {
