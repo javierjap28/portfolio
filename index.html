@@ -1,273 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
-</head>
-
-<body>
-  <!-- Desktop Nav -->
-  <nav id="desktop-nav">
-    <div class="logo">Jap</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#project">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!-- Hamburger Nav -->
-  <nav id="hamburger-nav">
-    <div class="logo">Jap</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <!-- Menu Links -->
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
-  <!-- Profile Section -->
-  <section id="profile">
-    <div class="section_pic-container">
-      <img src="./assets/images/profile.jpeg" alt="Jap" />
-    </div>
-    <div class="section_text">
-      <p class="section_text_p1">Hello, I'm</p>
-      <h1 class="title">Jap28</h1>
-      <p class="section_text_p2">Programmer</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/resumejap28.pdf')">
-          Download CV
-        </button>
-
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Me
-        </button>
-      </div>
-      <div id="socials-container">
-        <img src="./assets/images/linkedin icon.png" alt="linkedin" class="icon"
-          onclick="location='https://www.linkedin.com/in/ralph-joseph-javier'" />
-
-        <img src="./assets/images/github icon.png" alt="linkedin" class="icon"
-          onclick="location='https://github.com/javierjap28'" />
-      </div>
-    </div>
-  </section>
-  <!-- About Section -->
-  <section id="about">
-    <p class="section_text_p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section_pic-container">
-        <img class="about-pic" src="./assets/images/1.jpg" alt="Profile picture" />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/images/experience.png" alt="Experience icon" class="icon" />
-            <h3>Experience</h3>
-            <p>
-              1 year and still learning<br />
-              programming
-            </p>
-          </div>
-
-          <div class="details-container">
-            <img src="./assets/images/education.png" alt="Education icon" class="icon" />
-            <h3>Education</h3>
-            <p>
-              College Undergraduate <br />
-              ABE-intl' College
-            </p>
-          </div>
-        </div>
-
-        <div class="text-container">
-          <p>
-            Hello! I'm Ralph Joseph Javier, a passionate junior web developer based in the philippines. Beyond coding,
-            here's a glimpse into my interests and activities:
-
-          <h3>Web Development Enthusiast:</h3>
-          I thrive on crafting engaging and dynamic web experiences. My expertise lies in HTML, CSS, JavaScript, PHP,
-          and building CRUD systems for seamless user interactions.
-
-          <h3>Creative Explorer:</h3>
-          I love watching life hacks on YouTube, exploring DIY projects, and spending my time editing pictures for
-          others. I specialize in photo restoration, giving new life to old memories.
-
-          <h3>Musical Moments:</h3>
-          When I'm not immersed in code, you'll find me playing the guitar and singing along to the soulful tunes of
-          Boyce Avenue and local Pinoy band songs. Music is not just a hobby; it's a source of inspiration and
-          relaxation.
-
-          <h3>Night Owl Coder:</h3>
-          As the night falls, I dive into the world of coding. Armed with VS Code, I continue to sharpen my skills and
-          explore new technologies. The tranquility of the night fuels my creativity.
-
-          <h3>Continuous Learner:</h3>
-          Currently, I am working towards earning a certification on FreeCodeCamp. The learning journey is exciting, and
-          I'm always on the lookout for new challenges to tackle and skills to master.
-          </p>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-  </section>
-  <!-- Experience Section -->
-  <section id="experience">
-    <p class="section_text_p1">My Work</p>
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <!-- Work Experience Details Container -->
-        <div class="details-container">
-          <h2 class="experience-sub-title">Basic RPG Game Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/images/check mark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>HTML</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/images/check mark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>CSS</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/images/check mark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>JavaScript</h3>
-                <p>Intermidiate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/images/check mark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>HTML</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/images/check mark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>CSS</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/images/check mark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>JavaScript</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/images/check mark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>SASS</h3>
-                <p>Intermidiate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-  </section>
-  <!-- Project Section -->
-  <section id="projects">
-    <p class="section_text_p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/images/Animated-Profile.jpg" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title-project-title">Dragon Repeller-FreeCodeCamp</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='/FreeCodeCamp-JavaScript/Basic-javaScript-Building-RPG-game/index.html'">
-              Play
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/javierjap28/FreeCodeCamp-JavaScript'">
-              Sourcecode
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/images/1.jpg" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title-project-title">Project One</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-              Github
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/images/1.jpg" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title-project-title">Project One</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-              Github
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-  </section>
-  <!-- Contact Section -->
-  <section id="contact">
-    <p class="section_text_p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/images/email icon.png" alt="Email icon" class="icon contact-icon" />
-        <p><a href="mailto:javierjap28@gmail.com">javierjap28@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/images/linkedin icon.png" alt="Email icon" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com/in/ralph-joseph-javier">Linkedin</a></p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <nav>
-      <div class="nav-links-container">
+  <body>
+    <!-- Desktop Nav -->
+    <nav id="desktop-nav">
+      <div class="logo">Jap</div>
+      <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -276,9 +21,368 @@
         </ul>
       </div>
     </nav>
-    <p>Copyright &#169; 2024 Jap. All Rights Reserved.</p>
-  </footer>
-  <script src="script.js"></script>
-</body>
+    <!-- Hamburger Nav -->
+    <nav id="hamburger-nav">
+      <div class="logo">Jap</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- Menu Links -->
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- Profile Section -->
+    <section id="profile">
+      <div class="section_pic-container">
+        <img src="./assets/images/profile.jpeg" alt="Jap" />
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">Jap28</h1>
+        <p class="section_text_p2">Programmer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resumejap28.pdf')"
+          >
+            Download CV
+          </button>
 
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Me
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/images/linkedin icon.png"
+            alt="linkedin"
+            class="icon"
+            onclick="location='https://www.linkedin.com/in/ralph-joseph-javier'"
+          />
+
+          <img
+            src="./assets/images/github icon.png"
+            alt="linkedin"
+            class="icon"
+            onclick="location='https://github.com/javierjap28'"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about">
+      <p class="section_text_p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section_pic-container">
+          <img
+            class="about-pic"
+            src="./assets/images/1.jpg"
+            alt="Profile picture"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/images/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                1 year and still learning<br />
+                programming
+              </p>
+            </div>
+
+            <div class="details-container">
+              <img
+                src="./assets/images/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                College Undergraduate <br />
+                ABE-intl' College
+              </p>
+            </div>
+          </div>
+
+          <div class="text-container">
+            <h3>Web Development Enthusiast:</h3>
+            <p>
+              I thrive on crafting engaging and dynamic web experiences. My
+              expertise lies in HTML, CSS, JavaScript, PHP, and building CRUD
+              systems for seamless user interactions.
+            </p>
+
+            <h3>Night Owl Coder:</h3>
+            <p>
+              As the night falls, I dive into the world of coding. Armed with VS
+              Code, I continue to sharpen my skills and explore new
+              technologies. The tranquility of the night fuels my creativity.
+            </p>
+
+            <h3>Continuous Learner:</h3>
+            <p>
+              Currently, I am working towards earning a certification on
+              FreeCodeCamp. The learning journey is exciting, and I'm always on
+              the lookout for new challenges to tackle and skills to master.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <!-- Experience Section -->
+    <section id="experience">
+      <p class="section_text_p1">My Work</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Work Experience Details Container -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Basic RPG Game Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/images/check mark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/images/check mark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/images/check mark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermidiate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/images/check mark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/images/check mark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/images/check mark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/images/check mark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermidiate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <!-- Project Section -->
+    <section id="projects">
+      <p class="section_text_p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/images/Animated-Profile.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title-project-title">
+              Dragon Repeller-FreeCodeCamp
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='/FreeCodeCamp-JavaScript/Basic-javaScript-Building-RPG-game/index.html'"
+              >
+                Play
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/javierjap28/FreeCodeCamp-JavaScript'"
+              >
+                Sourcecode
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/images/1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title-project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/images/1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title-project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+      <p class="section_text_p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/images/email icon.png"
+            alt="Email icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="mailto:javierjap28@gmail.com">javierjap28@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/images/linkedin icon.png"
+            alt="Email icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/ralph-joseph-javier"
+              >Linkedin</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Jap. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

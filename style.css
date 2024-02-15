@@ -289,7 +289,9 @@ display: flex;
   width: 400px;
   margin: auto 0;
 }
-
+.text-container h3 {
+  
+}
 /*      Experience Section     */
 
 #experience {
